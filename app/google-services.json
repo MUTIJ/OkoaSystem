@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373473788772",
+    "project_id": "okoa-shop",
+    "storage_bucket": "okoa-shop.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373473788772:android:d2500491530e656e653071",
+        "android_client_info": {
+          "package_name": "com.hez.okoaapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvgEHd6mYQ85LB5u3M7KnH0JH5qwSqVzU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

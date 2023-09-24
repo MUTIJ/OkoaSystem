@@ -40,22 +40,43 @@
 
                 </TextView>
 
-                <TextView
-                    android:id="@+id/accounts"
-                    android:layout_width="wrap_content"
-                    android:layout_height="50dp"
-                    android:text="Accounts"
-                    android:textStyle="bold"
-                    android:layout_marginStart="30dp"
-                    android:layout_marginBottom="30dp"
-                    android:textSize="25sp"
-                    android:clickable="true"
-                    android:layout_marginEnd="32dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="20dp"
-                    android:focusable="true">
+                    android:orientation="horizontal">
 
-                </TextView>
+                    <ImageView
+                        android:id="@+id/admin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:background="@drawable/baseline_lock_24"
+                        android:contentDescription="admin"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.686"
+                        app:shapeAppearanceOverlay="@style/circular"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
 
+                    <TextView
+                        android:id="@+id/adminpage"
+                        android:layout_width="100dp"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="6dp"
+                        android:gravity="center"
+                        android:clickable="true"
+                        android:paddingStart="9dp"
+                        android:textStyle="bold"
+                        android:text="Admin"
+                        android:textSize="27dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/admin"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/admin"
+                        app:layout_constraintTop_toTopOf="@+id/admin" />
+
+
+                </LinearLayout>
 
 
             </LinearLayout>
@@ -79,7 +100,7 @@
 
 
                 <EditText
-                    android:id="@+id/editTextText4"
+                    android:id="@+id/user_name"
                     android:layout_width="270dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="60dp"
@@ -90,13 +111,13 @@
                     android:paddingStart="15dp"
                     android:textColor="@color/black"
                     android:textSize="25sp"
-                    app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress7"
+                    app:layout_constraintEnd_toEndOf="@+id/user_email"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress7"
+                    app:layout_constraintStart_toStartOf="@+id/user_email"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/editTextTextEmailAddress7"
+                    android:id="@+id/user_email"
                     android:layout_width="270dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="48dp"
@@ -107,13 +128,13 @@
                     android:paddingStart="15dp"
                     android:textColor="@color/black"
                     android:textSize="25sp"
-                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+                    app:layout_constraintEnd_toEndOf="@+id/user_password"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+                    app:layout_constraintStart_toStartOf="@+id/user_password"
+                    app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword"
+                    android:id="@+id/user_password"
                     android:layout_width="270dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="48dp"
@@ -123,13 +144,13 @@
                     android:paddingStart="15sp"
                     android:textColor="@color/black"
                     android:textSize="25sp"
-                    app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+                    app:layout_constraintEnd_toEndOf="@+id/conf_password"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress7" />
+                    app:layout_constraintStart_toStartOf="@+id/conf_password"
+                    app:layout_constraintTop_toBottomOf="@+id/user_email" />
 
                 <EditText
-                    android:id="@+id/editTextTextPassword2"
+                    android:id="@+id/conf_password"
                     android:layout_width="270dp"
                     android:layout_height="50dp"
                     android:layout_marginTop="48dp"
@@ -144,10 +165,17 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.508"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+                    app:layout_constraintTop_toBottomOf="@+id/user_password" />
 
 
             </LinearLayout>
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:id="@+id/progressbar"
+                android:layout_gravity="center"/>
 
 
          <LinearLayout
@@ -158,12 +186,12 @@
              android:layout_marginBottom="60dp"
              android:orientation="horizontal">
              <Button
-                 android:id="@+id/button"
+                 android:id="@+id/btnsignup_user"
                  android:layout_width="134dp"
                  android:layout_height="48dp"
                  android:text="Sign Up"
-                 app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                 app:layout_constraintStart_toStartOf="@+id/conf_password"
+                 app:layout_constraintTop_toBottomOf="@+id/conf_password" />
 
              <Button
                  android:id="@+id/userlogin"
@@ -171,9 +199,9 @@
                  android:layout_height="48dp"
                  android:layout_marginStart="8dp"
                  android:text="Login"
-                 app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+                 app:layout_constraintEnd_toEndOf="@+id/conf_password"
                  app:layout_constraintStart_toEndOf="@+id/button"
-                 app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                 app:layout_constraintTop_toBottomOf="@+id/conf_password" />
          </LinearLayout>
 
 

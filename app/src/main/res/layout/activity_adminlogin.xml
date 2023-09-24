@@ -42,9 +42,9 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/black"
                 android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress7"
+                app:layout_constraintEnd_toEndOf="@+id/user_email"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress7"
+                app:layout_constraintStart_toStartOf="@+id/user_email"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
@@ -59,10 +59,10 @@
                 android:paddingStart="15dp"
                 android:textColor="@color/black"
                 android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+                app:layout_constraintEnd_toEndOf="@+id/user_password"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-                app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+                app:layout_constraintStart_toStartOf="@+id/user_password"
+                app:layout_constraintTop_toBottomOf="@+id/user_name" />
 
             <EditText
                 android:id="@+id/adminPassword"
@@ -75,10 +75,10 @@
                 android:paddingStart="15sp"
                 android:textColor="@color/black"
                 android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+                app:layout_constraintEnd_toEndOf="@+id/conf_password"
                 app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress7" />
+                app:layout_constraintStart_toStartOf="@+id/conf_password"
+                app:layout_constraintTop_toBottomOf="@+id/user_email" />
 
 
         </LinearLayout>
@@ -98,9 +98,9 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="8dp"
                 android:text="Login"
-                app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword2"
+                app:layout_constraintEnd_toEndOf="@+id/conf_password"
                 app:layout_constraintStart_toEndOf="@+id/button"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+                app:layout_constraintTop_toBottomOf="@+id/conf_password" />
         </LinearLayout>
     </LinearLayout>
 
