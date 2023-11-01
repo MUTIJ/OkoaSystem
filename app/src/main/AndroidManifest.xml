@@ -13,6 +13,18 @@
         android:theme="@style/Theme.OkoaApp"
         tools:targetApi="31">
         <activity
+            android:name=".LoanRequest"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCustomerfeedback"
+            android:exported="false" />
+        <activity
+            android:name=".ViewCustomerOrders"
+            android:exported="false" />
+        <activity
+            android:name=".ViewAllProduct"
+            android:exported="false" />
+        <activity
             android:name=".Accounts"
             android:exported="false" />
         <activity

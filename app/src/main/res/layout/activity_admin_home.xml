@@ -72,7 +72,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
                         android:text="Add New Category"
@@ -140,7 +140,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
                         android:text="View All Products"
@@ -174,7 +174,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
                         android:text="View All Feedbacks"
@@ -208,7 +208,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
                         android:text="View Customer Orders"
@@ -245,39 +245,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="20dp"
-                app:cardElevation="10dp">
 
-                <RelativeLayout
-                    android:id="@+id/view_monthly_reports"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="10dp">
-
-                    <ImageView
-                        android:id="@+id/reports"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="10dp"
-                        android:src="@drawable/ic_orders_list" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerInParent="true"
-                        android:gravity="center"
-                        android:text="View Monthly Reports"
-                        android:textColor="#6f6f6f"
-                        android:textSize="18sp"
-                        android:textStyle="bold" />
-                </RelativeLayout>
-            </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -287,7 +255,7 @@
                 app:cardElevation="10dp">
 
                 <RelativeLayout
-                    android:id="@+id/new_product_layout"
+                    android:id="@+id/view_loan_layout"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -302,7 +270,7 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:gravity="center"
                         android:text="Loan Request"
@@ -336,9 +304,10 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="48dp"
                         android:layout_centerInParent="true"
                         android:text="Logout"
+                        android:gravity="center"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp"
                         android:textStyle="bold" />
