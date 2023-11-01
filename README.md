@@ -1,2 +1,2 @@
 # OkoaSystem
-okoa App
+Loan System.
