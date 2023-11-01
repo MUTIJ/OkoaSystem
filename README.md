@@ -1,2 +1,3 @@
 # OkoaSystem
-Loan System.
+-Ecommerce app
+-Loan System.
