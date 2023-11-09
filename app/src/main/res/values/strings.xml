@@ -5,4 +5,7 @@
     <string name="order">Order</string>
     <string name="feedbacks">Feedbacks</string>
     <string name="logout">Logout</string>
+
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
 </resources>

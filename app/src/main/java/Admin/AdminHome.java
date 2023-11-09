@@ -5,10 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.TextView;
+import android.widget.RelativeLayout;
 
 import com.hez.okoaapp.LoanRequest;
-import com.hez.okoaapp.NewProductActivity;
+import com.hez.okoaapp.Newproduct;
 import com.hez.okoaapp.R;
 import com.hez.okoaapp.ViewAllProduct;
 import com.hez.okoaapp.ViewCustomerOrders;
@@ -16,7 +16,7 @@ import com.hez.okoaapp.ViewCustomerfeedback;
 
 public class AdminHome extends AppCompatActivity {
 
-    private TextView newproduct, viewproduct, viewfeedback,vieworder, loanrequest, logout;
+    private RelativeLayout newproduct, viewproduct, viewfeedback,vieworder, loanrequest, logout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class AdminHome extends AppCompatActivity {
         newproduct.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(AdminHome.this, NewProductActivity.class);
+                Intent intent = new Intent(AdminHome.this, Newproduct.class);
                 startActivity(intent);
             }
         });
